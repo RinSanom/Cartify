@@ -31,17 +31,15 @@ public class UserView {
         System.out.println(YELLOW + "+===================+" + "     " + "+===================+" + RESET);
         System.out.println();
         System.out.println("Enter your choice (1-2): ");
-
     }
     public void showSelectedOption() {
         int opt = new Scanner(System.in).nextInt();
-
         switch (opt) {
             case 1:
                 System.out.println(GREEN + "You selected: Login" + RESET);
                 break;
             case 2:
-                System.out.println(GREEN + "You selected: Register" + RESET);
+
                 break;
             default:
                 System.out.println(CYAN + "Invalid option!" + RESET);

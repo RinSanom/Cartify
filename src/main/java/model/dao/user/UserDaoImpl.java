@@ -6,12 +6,11 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public void registerUser(Users user) {
-        System.out.println("User registered successfully");
+        String sql = """
+                INSERT INTO users (id, username, password, email, role, created_at) 
+                VALUES (?, ?, ?, ?, ?, ?)
+                """;
     }
-
-
-
-
     @Override
     public void loginUser(String username, String password) {
         System.out.println("User logged in successfully");
@@ -30,7 +29,6 @@ public class UserDaoImpl implements UserDao {
     public void placeOrder() {
 
     }
-
     @Override
     public void viewOrderHistory() {
 
