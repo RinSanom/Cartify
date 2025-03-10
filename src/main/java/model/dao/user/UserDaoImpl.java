@@ -19,18 +19,16 @@ public class UserDaoImpl implements UserDao {
     public void logout() {
         System.out.println("User logged out successfully");
     }
-
     @Override
     public void viewProducts() {
         System.out.println("Products viewed successfully");
     }
-
     @Override
     public void placeOrder() {
-
+        System.out.println("Order placed successfully");
     }
     @Override
     public void viewOrderHistory() {
-
+        System.out.println("Order history viewed successfully");
     }
 }
